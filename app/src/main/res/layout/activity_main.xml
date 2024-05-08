@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.MainAktivity">
+
+    <TextView
+        android:id="@+id/textType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textType"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonPS5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS5"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonPS4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS4"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonPS3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS3"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonPSVR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PSVR"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textExtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambahan:"
+        android:textSize="20sp"
+        android:layout_below="@id/radioGroupType"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupExtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textExtras"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonIndomie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indomie"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonMieAyam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mie Ayam"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonSomay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Somay"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu:"
+        android:textSize="20sp"
+        android:layout_below="@id/radioGroupExtras"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/textHours"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editHours"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_below="@id/buttonOrder"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

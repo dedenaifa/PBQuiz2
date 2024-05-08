@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RentalPS</string>
+    <string-array name="types">
+        <item>PS5</item>
+        <item>PS4</item>
+        <item>PS3</item>
+        <item>PSVR</item>
+    </string-array>
+    <string-array name="extras">
+        <item>Indomie</item>
+        <item>Mie Ayam</item>
+        <item>Somay</item>
+    </string-array>
+    <string name="app_name_quiz02">Quiz02</string>
+</resources>
